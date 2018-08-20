@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "NoPopUp",
+  "description": "Hides annoying subscription pop-up",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_title": "NoPopUp"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "https://hi-tech.mail.ru/*"
+      ],
+      "css": [
+        "content/hi-tech.mail.ru.css"
+      ]
+    }
+  ]
+}
