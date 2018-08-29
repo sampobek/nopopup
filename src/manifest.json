@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "NoPopUp",
   "description": "Hides annoying subscription pop-up",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "browser_action": {
     "default_title": "NoPopUp"
   },
@@ -22,7 +22,8 @@
     {
       "run_at": "document_end",
       "matches": [
-        "https://megatorrents.kg/*"
+        "https://megatorrents.kg/*",
+        "https://megatorrents.info/*"
       ],
       "css": [
         "content/megatorrents.kg.css"
